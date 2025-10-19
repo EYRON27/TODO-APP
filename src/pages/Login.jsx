@@ -96,7 +96,7 @@ export default function AuthSlider() {
                     <span className="checkmark"></span>
                     Remember me
                   </label>
-                  <a href="#" className="forgot-link">Forgot password?</a>
+                <a href="/forgot-password" className="forgot-link">Forgot password?</a>
                 </div>
                 
                 <button type="submit" className="auth-btn login-btn">
@@ -202,7 +202,7 @@ export default function AuthSlider() {
                   <label className="checkbox-container">
                     <input type="checkbox" required />
                     <span className="checkmark"></span>
-                    I agree to the <a href="#">Terms & Conditions</a>
+                   I agree to the <a href="/terms-and-conditions">Terms & Conditions</a>
                   </label>
                 </div>
                 
