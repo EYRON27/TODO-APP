@@ -1,4 +1,4 @@
-/* AuthSlider.css */
+/* AuthSlider.css - Mobile Optimized */
 
 * {
   margin: 0;
@@ -396,11 +396,51 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive design */
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE OPTIMIZATION
+   ============================================ */
+
+/* Tablet breakpoint (768px - 1024px) */
+@media (max-width: 1024px) {
+  .auth-card {
+    max-width: 700px;
+    height: 500px;
+  }
+  
+  .form-section {
+    padding: 30px;
+  }
+  
+  .promo-section {
+    padding: 30px;
+  }
+  
+  .form-header h2 {
+    font-size: 28px;
+  }
+  
+  .promo-section h3 {
+    font-size: 24px;
+  }
+  
+  .promo-icon {
+    font-size: 50px;
+  }
+}
+
+/* Tablet portrait (768px and below) */
 @media (max-width: 768px) {
+  .auth-container {
+    padding: 15px;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  
   .auth-card {
     height: auto;
-    max-width: 400px;
+    min-height: auto;
+    max-width: 500px;
+    border-radius: 16px;
   }
   
   .slider-wrapper {
@@ -409,25 +449,401 @@
     height: auto;
   }
   
-  .auth-panel {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .form-section, .promo-section {
-    width: 100%;
-    padding: 30px;
-  }
-  
-  .promo-section {
-    padding: 40px 30px;
-  }
-  
   .login-active {
     transform: translateY(0);
   }
   
   .signup-active {
     transform: translateY(-100%);
+  }
+  
+  .auth-panel {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+  
+  .form-section {
+    width: 100%;
+    padding: 30px 25px;
+    order: 2;
+  }
+  
+  .promo-section {
+    width: 100%;
+    padding: 30px 25px;
+    order: 1;
+    min-height: 200px;
+  }
+  
+  .form-header {
+    margin-bottom: 25px;
+  }
+  
+  .form-header h2 {
+    font-size: 26px;
+  }
+  
+  .form-header p {
+    font-size: 14px;
+  }
+  
+  .promo-section h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .promo-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .promo-icon {
+    font-size: 45px;
+  }
+  
+  .icon-wrapper {
+    margin-bottom: 15px;
+  }
+  
+  .switch-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  
+  .input-group {
+    margin-bottom: 16px;
+  }
+  
+  .input-group input {
+    padding: 13px 40px 13px 13px;
+    font-size: 15px;
+  }
+  
+  .form-options {
+    font-size: 13px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .auth-btn {
+    padding: 14px;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  
+  .divider {
+    margin: 16px 0;
+    font-size: 13px;
+  }
+  
+  .social-auth {
+    gap: 8px;
+  }
+  
+  .social-btn {
+    padding: 11px;
+    font-size: 13px;
+  }
+  
+  .social-icon {
+    font-size: 15px;
+  }
+  
+  /* Adjust floating shapes for tablet */
+  .shape-1 {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .shape-2 {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .shape-3 {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Mobile landscape (576px - 768px) */
+@media (max-width: 576px) and (orientation: landscape) {
+  .auth-container {
+    padding-top: 20px;
+  }
+  
+  .promo-section {
+    min-height: 150px;
+    padding: 20px;
+  }
+  
+  .promo-icon {
+    font-size: 35px;
+  }
+  
+  .promo-section h3 {
+    font-size: 20px;
+  }
+  
+  .promo-section p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .form-section {
+    padding: 25px 20px;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 10px;
+    padding-top: 20px;
+  }
+  
+  .auth-card {
+    max-width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-section {
+    padding: 25px 20px;
+  }
+  
+  .promo-section {
+    padding: 25px 20px;
+    min-height: 180px;
+  }
+  
+  .form-header h2 {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  
+  .form-header p {
+    font-size: 13px;
+  }
+  
+  .promo-section h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .promo-section p {
+    font-size: 13px;
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+  
+  .promo-icon {
+    font-size: 40px;
+  }
+  
+  .icon-wrapper {
+    margin-bottom: 12px;
+  }
+  
+  .switch-btn {
+    padding: 9px 22px;
+    font-size: 13px;
+    border-width: 1.5px;
+  }
+  
+  .input-group {
+    margin-bottom: 14px;
+  }
+  
+  .input-group input {
+    padding: 12px 38px 12px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  
+  .input-icon {
+    font-size: 16px;
+    right: 12px;
+  }
+  
+  .form-options {
+    font-size: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .checkbox-container {
+    font-size: 12px;
+  }
+  
+  .checkmark {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .checkbox-container input:checked + .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+  }
+  
+  .forgot-link {
+    font-size: 12px;
+  }
+  
+  .auth-btn {
+    padding: 13px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+  }
+  
+  .divider {
+    margin: 14px 0;
+    font-size: 12px;
+  }
+  
+  .social-auth {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .social-btn {
+    padding: 12px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+  
+  .social-icon {
+    font-size: 14px;
+  }
+  
+  /* Reduce floating shapes for small mobile */
+  .shape-1 {
+    width: 150px;
+    height: 150px;
+    opacity: 0.08;
+  }
+  
+  .shape-2 {
+    width: 180px;
+    height: 180px;
+    opacity: 0.08;
+  }
+  
+  .shape-3 {
+    width: 140px;
+    height: 140px;
+    opacity: 0.08;
+  }
+}
+
+/* Extra small mobile devices (360px and below) */
+@media (max-width: 360px) {
+  .auth-container {
+    padding: 8px;
+    padding-top: 15px;
+  }
+  
+  .auth-card {
+    border-radius: 12px;
+  }
+  
+  .form-section {
+    padding: 20px 16px;
+  }
+  
+  .promo-section {
+    padding: 20px 16px;
+    min-height: 160px;
+  }
+  
+  .form-header {
+    margin-bottom: 20px;
+  }
+  
+  .form-header h2 {
+    font-size: 22px;
+  }
+  
+  .form-header p {
+    font-size: 12px;
+  }
+  
+  .promo-section h3 {
+    font-size: 18px;
+  }
+  
+  .promo-section p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .promo-icon {
+    font-size: 36px;
+  }
+  
+  .switch-btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+  
+  .input-group input {
+    padding: 11px 35px 11px 11px;
+    font-size: 13px;
+  }
+  
+  .auth-btn {
+    padding: 12px;
+    font-size: 13px;
+  }
+  
+  .social-btn {
+    padding: 11px;
+    font-size: 12px;
+  }
+  
+  .form-options {
+    font-size: 11px;
+  }
+  
+  .divider {
+    font-size: 11px;
+  }
+}
+
+/* iPhone SE and similar small screens (320px) */
+@media (max-width: 320px) {
+  .form-section {
+    padding: 18px 14px;
+  }
+  
+  .promo-section {
+    padding: 18px 14px;
+  }
+  
+  .form-header h2 {
+    font-size: 20px;
+  }
+  
+  .promo-section h3 {
+    font-size: 17px;
+  }
+  
+  .promo-icon {
+    font-size: 32px;
+  }
+  
+  .input-group input {
+    padding: 10px 32px 10px 10px;
+    font-size: 13px;
+  }
+  
+  .auth-btn {
+    padding: 11px;
+    font-size: 13px;
   }
 }
